@@ -1,0 +1,371 @@
+/* 清除預設樣式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* 設定導航欄 */
+
+header {
+  width: 100%;
+  height: 3rem;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 5;
+}
+
+.nav {
+  width: 25%;
+  height: 46px;
+  display: flex;
+}
+.nav li {
+  position: relative;
+  width: 20%;
+  height: 100%;
+}
+.nav li:hover {
+  background-color: #666;
+}
+.nav li > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+/*設定隱藏方塊 */
+.hide {
+  position: absolute;
+  width: 150%;
+  height: 90px;
+  z-index: 5;
+  top: 47px;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #fff;
+}
+.hide div {
+  width: 100%;
+  height: 30%;
+  flex: auto;
+}
+.hide div:hover {
+  background-color: #66666660;
+}
+.hide div a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  padding: 10px 15px 0;
+}
+
+.more:hover .hide {
+  display: flex;
+}
+
+/* 左側搜索按鈕 */
+
+.search-list {
+  width: 50px;
+  height: 100%;
+}
+
+.search-list:hover {
+  background-color: tomato;
+}
+.search-list a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 中央滿版輪播圖 */
+.outer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.outer li {
+  width: 100%;
+  position: absolute;
+}
+
+.outer li img {
+  width: 100%;
+}
+
+.city {
+  position: absolute;
+  bottom: 7px;
+  left: 41%;
+  z-index: 1;
+  color: #fff;
+  width: 20rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.city h2 {
+  display: flex;
+}
+
+/*樂團簡介 */
+
+.w {
+  width: 800px;
+  height: 671px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+.band h2,
+.order > h2,
+.contact-title h2 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.band h3,
+.order > p,
+.contact-title p {
+  font-size: 15px;
+  color: #666666ab;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.band p {
+  text-align: justify;
+  line-height: 20px;
+  padding: 0 15px;
+  font-size: 15px;
+  box-sizing: inherit;
+}
+
+.member {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+.member li {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.member li img {
+  width: 70%;
+  margin: 15px 0 0 0;
+  border-radius: 3px;
+}
+
+/* 訂購系統 */
+
+.contianer {
+  width: 100%;
+  height: 95vh;
+  background-color: #000;
+  padding: 64px 0;
+}
+
+.order > h2 {
+  color: #fff;
+}
+.month {
+  width: 100%;
+  background-color: #fff;
+  height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.month li {
+  display: flex;
+  padding: 0 0 10px 20px;
+  font-size: 15px;
+  position: relative;
+}
+.month li:nth-child(-n + 2) {
+  border-bottom: 1px solid #ddd;
+}
+.month li h2 {
+  font-size: 15px;
+  font-weight: lighter;
+  color: #757575;
+}
+
+.month li p {
+  margin-left: 15px;
+  color: white;
+  background-color: #f44336;
+  padding: 0 5px;
+}
+
+.month li span {
+  position: absolute;
+  right: 50px;
+  display: block;
+  width: 24px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  line-height: 22px;
+  border-radius: 50%;
+  height: 22px;
+}
+
+.ticket-info {
+  width: 100%;
+  height: 470px;
+  background-color: #000;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.ticket-info li {
+  width: 32%;
+  height: 88%;
+  background-color: #fff;
+}
+.ticket-info img {
+  width: 100%;
+}
+.info {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+.ticket-info h4 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.ticket-info h6 {
+  opacity: 0.6;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.buy a:hover {
+  background-color: #ddd;
+}
+.buy a {
+  display: flex;
+  width: 107px;
+  height: 38px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.contact {
+  height: 50vh;
+}
+.contact-info {
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.band-contact span {
+  font-size: 18px;
+  line-height: 25px;
+}
+.band-contact i {
+  margin-right: 10px;
+}
+
+.user-list {
+  height: 130px;
+  width: 380px;
+}
+
+.email-list {
+  /* padding-right: 25px; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.email-list input {
+  width: 183px;
+  border: 1px solid #ddd;
+  height: 40px;
+}
+
+.message {
+  width: 380px;
+}
+
+.message input {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+}
+
+button {
+  float: right;
+  width: 71px;
+  height: 38.5px;
+  background: #000;
+  color: #fff;
+  border: none;
+  margin: 16px 0;
+  cursor: pointer;
+}
+
+/* 最後大圖 */
+.last {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://www.w3schools.com/w3images/map.jpg);
+  background-size: cover;
+}
+
+/* 尾部支援 */
+footer {
+  width: 40%;
+  height: 30vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
